@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Web</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, red, green);
+    padding: 15px 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  /* Search box */
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .search-box input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+  }
+
+  .search-box button {
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  /* Help Icon Section */
+  .help-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+  }
+
+  .help-icon span {
+    font-weight: bold;
+    color: white;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product-box {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-color: red;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="help-icon">
+    &#9776; &#9776; &#9776; <span>Help</span>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search...">
+    <button>&#128269;</button>
+  </div>
+</header>
+
+<main>
+  <div class="product-grid">
+    <!-- 20 Product Boxes -->
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+    <div class="product-box">The product is not import</div>
+  </div>
+</main>
+
+</body>
+</html>
